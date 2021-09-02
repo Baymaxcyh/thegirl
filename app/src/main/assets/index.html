@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0 Transitional//EN">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="file:///android_asset/js/sakura.js"></script>
+<HTML>
+<HEAD>
+    <meta charset="utf-8" />
+    <TITLE>我最喜欢的王</TITLE>
+    <link rel="stylesheet" type="text/css" href="file:///android_asset/css/index.css" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <style>
+
+        body {
+            padding:0;
+            margin:0;
+            overflow:hidden;
+            height: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            position: relative;
+        }
+        #wrapper{
+            width: 100%;
+            position: absolute;
+            text-align: center;
+        }
+        #words{
+            pointer-events:none;
+            font-family: 'Calligraffitti', cursive;
+            position: absolute;
+            width:100%;
+            padding: 250px 0 0 0;
+            font-size: 1.2em;
+            color: black;
+            text-align:center;
+        }
+        #words p{
+            display: none;
+        }
+        #words p#w1{
+            display: block;
+        }
+        #words p span{
+            display: block;
+            font-size: .8em;
+        }
+        #UI{
+            color: white;
+            width: 200px;
+            cursor: pointer;
+            position: relative;
+            display: none;
+        }
+        #behaviours{
+            margin-top: 10px;
+        }
+        #behaviours label span{
+            display: inline-block;
+            font-size: .7em;
+        }
+        #behaviours input{
+            width: 50px;
+            margin-bottom: 10px;
+            margin-top: -20px;
+        }
+        canvas {
+            padding:0;
+            margin:0;
+        }
+        div.btnbg {
+            position:fixed;
+            left:0;
+            top:0;
+        }</style>
+</HEAD>
+<BODY>
+<audio autoplay="autoplay" loop="loop">
+    <source src="file:///android_asset/世界这么大还是遇见你.mp3"/>
+</audio>
+
+<canvas id="sakura"></canvas>
+<div class="btnbg"></div>
+<!--/*图片*/-->
+<div class="wrap">
+    <!--	/*图片*/-->
+    <div class="cube">
+        <!--????? -->
+        <div class="out_front">
+            <img src="file:///android_asset/img/1.jpg"  class="pic"/>
+        </div>
+        <!--?????? -->
+        <div class="out_back">
+            <img src="file:///android_asset/img/2.jpg"  class="pic"/>
+        </div>
+        <!--???? -->
+        <div class="out_left">
+            <img src="file:///android_asset/img/3.jpg"  class="pic"/>
+        </div>
+        <div class="out_right">
+            <img src="file:///android_asset/img/4.jpg"  class="pic"/>
+        </div>
+        <div class="out_top">
+            <img src="file:///android_asset/img/5.jpg"  class="pic"/>
+        </div>
+        <div class="out_bottom">
+            <img src="file:///android_asset/img/6.jpg"  class="pic"/>
+        </div>
+        <!--???????? -->
+        <span class="in_front">
+				<img src="file:///android_asset/img/7.jpg" class="in_pic" />
+			</span>
+        <span class="in_back">
+			     <img src="file:///android_asset/img/8.jpg" class="in_pic" />
+			</span>
+        <span class="in_left">
+				<img src="file:///android_asset/img/9.jpg" class="in_pic" />
+			</span>
+        <span class="in_right">
+				<img src="file:///android_asset/img/10.jpg" class="in_pic" />
+			</span>
+        <span class="in_top">
+				<img src="file:///android_asset/img/11.jpg" class="in_pic" />
+			</span>
+        <span class="in_bottom">
+				<img src="file:///android_asset/img/12.jpg" class="in_pic" />
+			</span>
+    </div>
+</div>
+<!--文字-->
+<div id=container>
+    <div id="wrapper"></div>
+    <div id="words">
+        <p id="w1">my heart
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+        </p>
+        </p>
+        <p id="w2">you are my guiding star</p>
+        <p id="w3">my heart</p>
+        <p id="w4">beats for you</p>
+        <p id="w5">you send me</p>
+        <p id="w6">into the sun</p>
+        <p id="w7">into chaos</p>
+        <p id="w8">i am all a'quiver!</p>
+        <p id="w9">Play with me!<span>move your mouse</span></p>
+    </div>
+</BODY>
+</HTML>
+
